@@ -1,14 +1,21 @@
 import os
 import csv
+#read in csv file:
 csvpath = os.path.join("Resources","03-Python_Homework_Instructions_PyBank_Resources_budget_data.csv")
 with open(csvpath) as csvfile:
     csvreader = csv.reader(csvfile, delimiter=",")
+    #skip header:
     csv_header = next(csvreader)
+    #set starting count:
     row_count= 0
     PnL = 0
+    #create Profit and Loss as a list:
     PL =[]
+    #create Delta as a list to keep track of changes in P&L:
     Delta =[]
+    #create Dt as a list to keep track of dates:
     Dt = []
+    #loop through rows in the csvreader:
     for row in csvreader:
         row_count = row_count+1
         PnL = PnL + int(row[1])
@@ -20,6 +27,7 @@ with open(csvpath) as csvfile:
         else:
             Delta.append (PL[i]-PL[i-1])
     
+    #analysis:
     max_chg_index = Delta.index(max(Delta))
     max_chg_date = Dt[max_chg_index]
     min_chg_index = Delta.index(min(Delta))
