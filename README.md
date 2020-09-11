@@ -3,7 +3,7 @@
 
 PyBank
 
-In this challenge, I was tasked with creating a Python script for analyzing the financial records of my company. I was a set of financial data called budget_data.csv. The dataset is composed of two columns: Date and Profit/Losses. 
+In this challenge, I was tasked with creating a Python script for analyzing the financial records of a company. I was given a set of financial data called budget_data.csv. The dataset is composed of two columns: Date and Profit/Losses. 
 
 
 My task is to create a Python script that analyzes the records to calculate each of the following:
