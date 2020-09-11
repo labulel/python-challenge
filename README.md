@@ -53,4 +53,4 @@ The total number of votes each candidate won
 The winner of the election based on popular vote.
 
 
-My final script should both print the analysis to the terminal and export a text file with the results.
+My final script both prints the analysis to the terminal and export a text file with the results.
